@@ -15,7 +15,7 @@
     --dark-2:#424242;
     --dark-1:#131313;
     --dark-3:#727272;
-    --orange:#FF900E;
+    --orange:#FF900E; 
 }
 /* Shared style */
 .display-flex{
@@ -54,7 +54,7 @@ header{
     text-decoration: none;
     font-weight: 500;
     color: var(--dark-2);
-    font-size: 18px;
+    font-size: 1.25rem;
 }
 /* banner style */
 .banner{
@@ -80,14 +80,39 @@ header{
 .banner-img{
     width: 100%;
 }
-/* header responsive media query */
+/* team section design */
+.teams-features{
+    display: flex;
+    max-width: 1320px;
+    margin: 130px auto;
+    align-items: center;
+}
+.teams-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:24px;
+}
+.features-container{
+    margin-left:73px;
+}
+.quick-list{
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--dark-3);
+}
+.features{
+    color: var(--orange);
+}
+/* smal device responsive media query */
 @media screen and (max-width:576px) {
     .navbar, .nav-links{
         flex-direction: column;
         gap:10px;
     }
     .brand{
-        font-size: 2rem;
+        /* font-size: 2rem; */
     }
-    
+    .banner-titile{
+        font-size: 3rem;
+    }
 }
